@@ -1,0 +1,26 @@
+
+Load Module
+================
+sudo insmod driver.ko
+
+
+Remove Module
+===============
+sudo rmmod driver
+
+
+
+Create device node (if not auto-created)
+============================================
+sudo mknod /dev/etx_device c 237 0
+sudo chmod 666 /dev/etx_device
+
+
+ls -l /dev/etx_device
+
+
+check the logs
+====================
+dmesg | tail
+
+
